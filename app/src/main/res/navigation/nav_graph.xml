@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vedruna.leonmunoze01.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_contadorFragment"
+            app:destination="@id/contadorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_exitFragment"
+            app:destination="@id/exitFragment" />
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_apiFragment"
+            app:destination="@id/apiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contadorFragment"
+        android:name="com.vedruna.leonmunoze01.ContadorFragment"
+        android:label="fragment_contador"
+        tools:layout="@layout/fragment_contador" />
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="com.vedruna.leonmunoze01.exitFragment"
+        android:label="fragment_exit"
+        tools:layout="@layout/fragment_exit" />
+    <fragment
+        android:id="@+id/apiFragment"
+        android:name="com.vedruna.leonmunoze01.ApiFragment"
+        android:label="fragment_api"
+        tools:layout="@layout/fragment_api" />
+</navigation>

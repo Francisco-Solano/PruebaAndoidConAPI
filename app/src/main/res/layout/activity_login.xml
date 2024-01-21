@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353232"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textoLogin"
+        android:layout_width="201dp"
+        android:layout_height="87dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginBottom="308dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Nombre"
+        android:inputType="textPassword"
+        android:textColor="#F6F6F6"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoLogin" />
+
+
+    <EditText
+        android:id="@+id/Contrasena"
+        android:layout_width="228dp"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoLogin"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="106dp"
+        android:backgroundTint="#1B1B1B"
+        android:fontFamily="@font/poppins_light"
+        android:onClick="loguear"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toTopOf="@+id/mensajeFinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Contrasena"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/mensajeFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Login correcto"
+        android:textColor="#5B5B5B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
