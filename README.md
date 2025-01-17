@@ -1,10 +1,11 @@
-﻿\# EJERCICIO 01
+## Prueba Android con API
 
-Deberás recrear en android la aplicación del contador que se os proporciona. El diseño se os pasará por figma (abajo teneis el enlace). En este primer ejercicio solo debes hacer la parte visual, nada de lógica. Asegurate de que el resultado final sea identico al proporcionado, en tu criterio queda elegir el o los tipos de layouts que utilizarás. Mediante figma obtén el tipo de fuente, colores etc que debes utilizar en tu aplicación.
+El objetivo de este proyecto es lograr la conexion de una API desde Android Studio por lo que no habrá logica de codigo mayor a lo necesario para conseguir el objetivo.
 
 
 
-EXPLICACION DE LA IMAGEN CONTADOR
+
+## EXPLICACION DE LA IMAGEN CONTADOR
 
 [![Ejercicio-M01.png](https://i.postimg.cc/63qcchc1/Ejercicio-M01.png)](https://postimg.cc/ft4YTm6x)
 
@@ -24,21 +25,20 @@ El texto de abajo del todo esta respecto a todos los lados de la pantalla para m
 
 
 
-EJERCICIO 2
+## Login
 
-Crea la segunda pantalla en el mismo proyecto(investiga como). Deberás realizar un lógin tal y como se muestra en el figma, en el caso de que el usuario y contraseña sean admin en el TextView de abajo saldrá “Usuario y contraseña correcta” en caso contrario “Usuario o contraseña incorrecta”. Investigar por vuestra cuenta como iniciar la aplicación en la Activity login. Pista → se configura en el AndroidManifest.xml. Una vez que iniciemos el login deberá pasar a la pantalla del contador pasando el dato del nombre del usuario (aparecerá en la parte baja de la pantalla de contador donde ponía “by nombre_alumno”).(ACTUALIZADO)
 
-EXPLICACION DE LA IMAGEN LOGIN
+## EXPLICACION DE LA IMAGEN LOGIN
 
 [![Captura-de-pantalla-2023-12-19-155006.png](https://i.postimg.cc/XJBH385B/Captura-de-pantalla-2023-12-19-155006.png)](https://postimg.cc/47ZbQpBX)
 
 
-Para la parte grafica del login He iniciado con un texto en el que pone login, he seleccionado el tamaño que he considerado mas adecuado para que sea similar a la  interfaz del figma y he añadido la fuente poppins bold para que sea una letra con mas grosor. He hecho que ese texto este "enganchado" a cada lado de la pantalla para que mantenga en su misma posicion independientemete del tamaño de la pantalla. He hecho lo mismo con el resto de elementos los cuales explicare a continuacion:
+Para la parte grafica del login He iniciado con un texto en el que pone login y he añadido la fuente poppins bold para que sea una letra con mas grosor. He hecho que ese texto este "enganchado" a cada lado de la pantalla para que mantenga en su misma posicion independientemete del tamaño de la pantalla. He hecho lo mismo con el resto de elementos los cuales explicare a continuacion:
 
-EditText del nombre y la contraseña: Le he escrito "Nombre" y "Contraseña" respectivamente en el hint para que sea igual que en el figma y el texto desaparezca cuando el usuario vaya a escribir. Los constraints de de estos EditText son por todos los lados respecto a la pantalla excepto la parte de arriba que ha sido respecto al texto de login para que siempre haya la misma distancia entre el texto y los editText sin que el tamaño de la pantalla influya.
+EditText del nombre y la contraseña: Le he escrito "Nombre" y "Contraseña" respectivamente en el hint  y el texto desaparezca cuando el usuario vaya a escribir. Los constraints de de estos EditText son por todos los lados respecto a la pantalla excepto la parte de arriba que ha sido respecto al texto de login para que siempre haya la misma distancia entre el texto y los editText sin que el tamaño de la pantalla influya.
 
 
-Boton de Login: Boton normal en el que he modificado el color y la letra para que sea como en el figma. Mismo constraint que los EditText de Nombre y Contraseña pero la parte de arriba enganchada respecto a los editText para mantener la distancia.
+Boton de Login: Boton normal en el que he modificado el color y la letra para darle un diseño profesional. Mismo constraint que los EditText de Nombre y Contraseña pero la parte de arriba enganchada respecto a los editText para mantener la distancia.
 
 
 Texto de abajo del todo: Constraint respecto a todos los lados de la pantalla y modificada como los demas elementos.
@@ -49,14 +49,7 @@ Texto de abajo del todo: Constraint respecto a todos los lados de la pantalla y 
 
 
 
-
-
-
-
-
-EJERCICIO 3
-
-Cambia el proyecto para que el segundo activity en vez de ser el contador sea un activity con un FrameLayout en el que se verán los diferentes fragments (mínimo home, contador, salir) y por otra parte una barra de navegación con la que podamos viajar entre los diferentes fragments.
+Ahora voy a cambiar el proyecto para que el segundo activity en vez de ser el contador sea un activity con un FrameLayout en el que se verán los diferentes fragments (mínimo home, contador, salir) y por otra parte una barra de navegación con la que podamos viajar entre los diferentes fragments.
 
 Para este ejercicio he creado un nuevo activity al que he llamado MenuActivity que es el que muestra la barra de navegacion con los diferentes items dentro del menu. Cada item lleva al fragment correspondiente. En este caso todos estan en blanco excepto el del contador que lleva al contador que hemos realizado en las anteriores actividades.
 
@@ -96,17 +89,17 @@ Por añadir algo más, prácticamente todos los fragments tienen sus bases de cu
 
 
 
-EJERCICIO 04
+## AÑADIR LA API
 
 
-Añade un Fragment mas que se llame API y sigue el tutorial (para la parte del consumo de la API) proporcionado para consumir un API con android(en esta entrega no tendrás que reflejar los resultado en la interfaz gráfica, solo en el log). Por otro lado crea un microservicio con una sola entidad.
+Voy a añadir un Fragment mas que se llame API y por otro lado crear un microservicio con una sola entidad.
 
 [![capturaej04.png](https://i.postimg.cc/g2YpSWWN/capturaej04.png)](https://postimg.cc/N5PZFZLH)
 
 
 
-Para este ejercicio he creado una API en INteliJ y la he consumido en android Studio siguiendo paso a paso el tutorial proporcionado. 
-He creado un nuevi¡o fragment, he seleccionado el icono que he considerado mejor y he añadido en los if else que si se presiona ese icono en la navegacion lleve al fragment donde se encuentra la api. 
+Para este ejercicio he creado una API en INteliJ y la he consumido en android Studio siguiendo paso a paso un tutorial. 
+He creado un nuevo fragment, he seleccionado el icono que he considerado mejor y he añadido en los if else que si se presiona ese icono en la navegacion lleve al fragment donde se encuentra la api. 
 
 El microservicio ha sido creado en InteliJ utilizando lombok entre otras herramientas para hacerlo funcionar siguiendo las buenas practicas.
 
